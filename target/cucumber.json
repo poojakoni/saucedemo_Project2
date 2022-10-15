@@ -1,0 +1,209 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 617058300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdef.login_stefdef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T18:01:12.980Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3929047300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "This scenario is to define the login happy path",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-define-the-login-happy-path",
+        "after": [
+          {
+            "result": {
+              "duration": 293263900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 521897500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the correct username and password",
+            "match": {
+              "location": "stepdef.login_stefdef.i_enter_the_correct_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 303275100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I clcik on Login Button",
+            "match": {
+              "location": "stepdef.login_stefdef.i_clcik_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1503300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should land on the home page",
+            "match": {
+              "location": "stepdef.login_stefdef.i_should_land_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 810233500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdef.login_stefdef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T18:01:18.829Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1315687900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "This scenario is to define the failure path",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-define-the-failure-path",
+        "after": [
+          {
+            "result": {
+              "duration": 1602516100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1146558300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter the incorrect username and password",
+            "match": {
+              "location": "stepdef.login_stefdef.i_enter_the_incorrect_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 370335600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I clcik on Login Button",
+            "match": {
+              "location": "stepdef.login_stefdef.i_clcik_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176659500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdef.login_stefdef.i_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Loginn.feature",
+    "tags": []
+  }
+]
